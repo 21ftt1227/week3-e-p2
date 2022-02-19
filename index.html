@@ -10,19 +10,28 @@
 <table cellpadding="10" border="1">
 	<form method="" action="">
 	<tr>
+		<!-- This code below have to put name that limit to 30 and required is important of filling the form-->
+
+	<tr>
 		<td>Fullname</td>
 		<td><input type="text" name="Name" pattern="[\w]{0-30}" required></td>
 	</tr>
+
+		<!-- This code below change the type to email so it only accept email -->
 
 	<tr>
 		<td>Email</td>
 		<td><input type="email" name="Email" required></td>
 	</tr>
 
+		<!-- This code below change the type to date so user can type or check the calander for the birth -->
+
 	<tr>
 		<td>Date you can start</td>
 		<td><input type="date" name="Date" required></td>
 	</tr>
+
+		<!-- This code below change the type to time to change they rule into hour: minute and AM/PM-->
 
 	<tr>
 		<td>Morning shift preference</td>
@@ -34,10 +43,14 @@
 		<td><input type="time" name="NightTime" required></td>
 	</tr>
 
+		<!-- This code below change the type to number so user can click the button to 3 6 and 9 by using steps command and make the min to3 and max to 9-->
+
 	<tr>
 		<td>How many hours you can work? In multiple of 3</td>
 		<td><input type="number" name="Hours" step="3" min="3" max="9" required></td>
 	</tr>
+
+		<!-- This code below change the type to range so it change to drag and the min start 1 to max is 15 and the value start at 3-->
 
 	<tr>
 		<td>Distance you willing to commute to volunteer center?</td>
@@ -47,6 +60,8 @@
 	<tr>
 		<td>You currency perference for payment?</td>
 		
+		<!-- This code below change the type to radio for selection and the id have different value like &#163;(£) &#165;(¥) &#128;(€)-->
+
 		<td>
 			<input type="radio" name="currency" id="&#163;" required>
 			<label for="&#163;">&#163;</label>
@@ -54,34 +69,48 @@
 			<input type="radio" name="currency" id="&#165;" required>
 			<label for="&#165;">&#165;</label>
 
-			<input type="radio" name="currency" id="&#128;" required>
+			<input type="radio" name="currency" id="" required>
 			<label for="&#128;">&#128;</label>
 		</td>
 	</tr>
+
+		<!-- This code below use textarea so user can change the row and column-->
 
 	<tr>
 		<td align="center" colspan="2"><textarea placeholder="Type your home address" rows="6" cols="40" required></textarea>
 	</tr>
 
+		<!-- This code below use strike to cross the words-->
+
 	<tr>
 		<td align="center" colspan="2"><strike>You will be given daily meals</strike></td>
 	</tr>
+
+		<!-- This code below use checkbox and this must be tick so it must required so user cannot process if it no tick-->
 
 	<tr>
 		<td align="center" colspan="2"><input type="Checkbox" name="Terms" id="Terms" required>I agree to all terms and conditions</td>
 	</tr>
 
+		<!-- This code below use checkbox and similar above-->
+
 	<tr>
 		<td align="center" colspan="2">Prove you are not robot: 10 < 20?<input type="Checkbox" name="Terms" id="Terms" required></td>
 	</tr>
+
+		<!-- This code below use submit so user accept and send to the database -->
 
 	<tr>
 		<td align="center" colspan="2"><input type="submit" name="sumbit" value="Volunteer now!"></td>
 	</tr>
 
+		<!-- This code below use reset if user need to clean everthing -->
+
 	<tr>
 		<td align="center" colspan="2"><input type="reset" name="reset" value="Start over"></td>
 	</tr>
+
+		<!-- This code below is about link but we extra command like target="_blank" so ot will open new tab for this website -->
 
 	<tr>
 		<td align="center" colspan="2">For more informaton, visit MOH <a href="https://www.moh.gov.bn/Pages/Home.aspx" target="_blank">website</a></td>
